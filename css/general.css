@@ -1,16 +1,16 @@
 @font-face {
   font-family: "font_main";
-  src: url("../fonts/Cairo-Regular.ttf");
+  src: url("../fonts/GE\ SS\ Two\ Light.otf");
 }
 
 @font-face {
   font-family: "font_medium";
-  src: url("../fonts/Cairo-Medium.ttf");
+  src: url("../fonts/GE\ SS\ Two\ Medium.otf");
 }
 
 @font-face {
   font-family: "font_bold";
-  src: url("../fonts/Cairo-Black.ttf");
+  src: url("../fonts/GE\ SS\ Two\ Bold.otf");
 }
 
 @font-face {
@@ -22,9 +22,9 @@
   --color-black: #0A0A0A;
   --color-black2: #333333;
   --color-Primary1: #8D1738;
-  --color-Primary2: #006C3B;
-  --color-Primary3: #F8EBDF;
-  --color-gray: #4D4D4D;
+  --color-Primary2: rgba(141, 23, 57, 0.2);
+  --color-Primary3: #F6EDF0;
+  --color-gray: rgba(138, 138, 138, 1);
   --color-Primary5: #F6EDF0;
   --color-border: rgba(217, 217, 217, 0.523);
 }
@@ -135,8 +135,7 @@ img,
 }
 
 body {
-  background: var(--color-Primary3);
-  font-family: "font_main";
+  font-family: "font_medium";
   font-weight: 400;
   padding: 0;
   margin: auto;
