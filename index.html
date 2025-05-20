@@ -17,12 +17,7 @@
 
     <link rel="shortcut icon" href="images/logo.ico" />
     <meta name="msapplication-TileColor" content="" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.xyz/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
@@ -64,7 +59,7 @@
                 <img src="images/logo.png" alt="logo" />
               </a>
             </div>
-            <div class="menu">
+            <div class="menu nav-list ">
               <ul>
                 <li><a  class="active" href="index.html">الرئيسية</a></li>
                 <li><a href="about.html">عن البعثة</a></li>
@@ -90,16 +85,19 @@
                     <p >العربية</p>
                 </a>
             </div>
+            <div class="show-menu">
+              <i class="fa-solid fa-bars"></i>
+          </div>
           </nav>
           <div class="hero-content">
             <div class="flags">
-                <img src="images/QatarFlag.svg" alt="flag">
-                <img src="images/omanFlag.svg" alt="flag">
+                <img src="images/Qatar-m.gif" alt="flag" style="transform: rotate3d(1, 1, 1, -30deg); ">
+                <img src="images/Oman-m.gif" alt="flag" style="transform: scaleX(-1) rotate3d(1, 1, 1, -30deg); ">
             </div>
             <div class="hero-content-text">
-                <h2>البعثة <span>التجارية</span> </h2>
-                <p>بين <span>قطر</span>   و   <span>عُمان</span></p>
-                <span>نعزز التجارة والاستثمار بين قطر وعُمان من خلال مبادرة تدعم الشراكات بين رجال الأعمال</span>
+                <h2>البعثة  <span>التجــــارية</span> بين</h2>
+                <p class="country"> <span>قطر</span>   و   <span>عُمان</span></p>
+                <span class="hero-content-text-desc">نعزز التجارة والاستثمار بين قطر وعُمان من خلال مبادرة تدعم الشراكات بين رجال الأعمال</span>
                 <a class="ctm-btn1" href="">سجل الان للمشاركة</a>
             </div>
           </div>
@@ -118,7 +116,7 @@
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="about-text">
-                    <h2>عن البعثة</h2>
+                    <h2 class="sub-title">عن البعثة</h2>
                     <p>
                         تهدف البعثة التجارية بين قطر وسلطنة عمان 2025، التي يستضيفها بنك قطر للتنمية، إلى تعزيز العلاقات التجارية من خلال ربط المستوردين وتجار الجملة والموزعين الدوليين المقيمين في سلطنة عمان مع المصنعين ومقدمي الخدمات القطريين.
                         تهدف البعثة التجارية بين قطر وسلطنة عمان 2025، التي يستضيفها بنك قطر للتنمية، إلى تعزيز العلاقات التجارية من خلال ربط المستوردين وتجار الجملة والموزعين الدوليين المقيمين في سلطنة عمان مع المصنعين ومقدمي الخدمات القطريين.
@@ -133,7 +131,7 @@
       <section class="about-bank" style="background-image: url(images/about-bank-bg.png);">
         <div class="main-container">
           <div class="about-bank-text">
-            <h2>عن البنك</h2>
+            <h2 class="sub-title">عن البنك</h2>
             <p>بنك قطر للتنمية (QDB) هو مؤسسة ممولة بالكامل من حكومة دولة قطر ومقرها الرئيسي في الدوحة، قطر. يهدف بنك قطر للتنمية إلى المساهمة في التنويع الاقتصادي لدولة قطر من خلال دعم المؤسسات والشركات الصغيرة والمتوسطة لتصبح قادرة على المنافسة والنمو محلياً وعالمياً. كما يدعم بنك قطر للتنمية رواد ورائدات الأعمال في قطر وتحفيزهم على الابتكار والاستدامة للمنافسة في الأسواق العالمية من خلال:
                 توفير الدعم المالي المباشر وغير المباشر لقطاعات محددة، واعتماد نهج خاص لتطوير كافة القطاعات المستهدفة.
                 تعزيز المهارات التقنية وتنمية القدرات.
@@ -150,11 +148,11 @@
        <section class="event-section">
         <div class="main-container">
             <div class="event-header">
-                <h2>الحدث </h2>
+                <h2 class="sub-title">الحدث </h2>
                 <p>الحدث يقترب... والعد التنازلي بدأ!</p>
             </div>
             <div class="row row-gap-5">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-3">
                     <div class="count-container">
                         <div class="count-body">
                             <p>الأيام</p>
@@ -162,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-3">
                     <div class="count-container">
                         <div class="count-body">
                             <p>الساعات</p>
@@ -170,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-3">
                     <div class="count-container">
                         <div class="count-body">
                             <p>الدقائق</p>
@@ -178,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-3">
                     <div class="count-container">
                         <div class="count-body">
                             <p>الثواني</p>
@@ -196,47 +194,849 @@
        <!-- end event -->
        <!-- start content-qatar -->
        <section class="content-qatar">
-        <div class="main-container">
-            <h2>لماذا دولة قطر</h2>
-            <div class="row statistics">
-                <div class="col-lg-3 col-md-6">
+          <div class="main-container">
+              <h2 class="sub-title">لماذا دولة قطر</h2>
+              <!-- statistics -->
+              <div class="row statistics">
+                  <div class="col-lg-3 col-md-6">
+                      <div class="statistic-item">
+                          <div class="statistic-item-icon">
+                              <img src="images/wallet.svg" alt="statistic">
+                          </div>
+                          <div class="statistic-item-text">
+                              <p>ما يزيد عن 160 + مليار دولار إجمالي قيمة الصادرات خلال عام 2022</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <div class="statistic-item">
+                          <div class="statistic-item-icon">
+                              <img src="images/satistices.svg" alt="statistic">
+                          </div>
+                          <div class="statistic-item-text">
+                              <p>$236.6 مليار دولار حجم الناتج المحلي الإجمالي لدولة قطر وفقاً لعام (2023)</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <div class="statistic-item">
+                          <div class="statistic-item-icon">
+                              <img src="images/global.svg" alt="statistic">
+                          </div>
+                          <div class="statistic-item-text">
+                              <p>تحتل قطر المرتبة 11 عالمياً في مؤشر التنافسية العالمية</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!--  -->
+                  <div class="col-lg-3 col-md-6">
                     <div class="statistic-item">
                         <div class="statistic-item-icon">
-                            <img src="images/statistic-icon1.png" alt="statistic">
+                            <img src="images/deal.svg" alt="statistic">
                         </div>
                         <div class="statistic-item-text">
-                            <h3>الاقتصاد</h3>
-                            <p>الاقتصاد قطر هو الاقتصاد الأكبر في المنطقة، وله أهمية كبيرة في الاقتصاد العالمي.</p>
+                            <p>61 اتفاقية ثنائية</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+              </div>
+              <!--statistics numbers  -->
+              <div class="row statistics-numbers">
+                <div class="col-lg-3 col-md-6 ">
+                  <div class="statistics-numbers-item">
+                    <div class="statistics-numbers-item-counter">
+                      <span>160</span>
+                      <p>مليار دولار</p>
+                    </div>
+                    <div class="statistics-numbers-item-text">
+                      <p> حجم مساهمة قطاع التصنيع
+                        في الناتج المحلي الإجمالي لعام 2022 </p>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-3 col-md-6 ">
+                  <div class="statistics-numbers-item">
+                    <div class="statistics-numbers-item-counter">
+                      <span>160</span>
+                      <p>مليار دولار</p>
+                    </div>
+                    <div class="statistics-numbers-item-text">
+                      <p>حجم صادرات الخدمات
+                        خلال عام 2022</p>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-3 col-md-6 ">
+                  <div class="statistics-numbers-item">
+                    <div class="statistics-numbers-item-counter">
+                      <span>160</span>
+                      <p>مليار دولار</p>
+                    </div>
+                    <div class="statistics-numbers-item-text">
+                      <p>الاستثمارات الصناعية</p>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-3 col-md-6 ">
+                  <div class="statistics-numbers-item">
+                    <div class="statistics-numbers-item-counter">
+                      <span>160</span>
+                      <p>مليار دولار</p>
+                    </div>
+                    <div class="statistics-numbers-item-text">
+                      <p>مرافق صناعية جديدة</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- start statistics-features -->
+              <div class="row statistics-features">
+                  <div class="col-lg-4 col-md-6">
+                      <div class="statistic-item">
+                          <div class="statistic-item-icon">
+                              <img src="images/truck-fast.svg" alt="statistic">
+                          </div>
+                          <div class="statistic-item-text">
+                              <h3> ميزات لوجستية</h3>
+                              <p>تقليل أوقات الشحن والتكاليف وتعزيز موثوقية سلسلة التوريد</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!--  -->
+                  <div class="col-lg-4 col-md-6">
+                      <div class="statistic-item">
+                          <div class="statistic-item-icon">
+                              <img src="images/import.svg" alt="statistic">
+                          </div>
+                          <div class="statistic-item-text">
+                              <h3> الاستقرار الاقتصادي</h3>
+                              <p>بيئة اقتصادية مرنة وعلاقات تجارية قوية</p>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!--  -->
+                  <div class="col-lg-4 col-md-6">
                     <div class="statistic-item">
                         <div class="statistic-item-icon">
-                            <img src="images/statistic-icon1.png" alt="statistic">
+                            <img src="images/Standards.svg" alt="statistic">
                         </div>
                         <div class="statistic-item-text">
-                            <h3>الاقتصاد</h3>
-                            <p>الاقتصاد قطر هو الاقتصاد الأكبر في المنطقة، وله أهمية كبيرة في الاقتصاد العالمي.</p>
+                            <h3> معايير عالية الجودة</h3>
+                            <p>مرافق ومنتجات حاصلة على شهادة الأيزو</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="statistic-item">
-                        <div class="statistic-item-icon">
-                            <img src="images/statistic-icon1.png" alt="statistic">
-                        </div>
-                        <div class="statistic-item-text">
-                            <h3>الاقتصاد</h3>
-                            <p>الاقتصاد قطر هو الاقتصاد الأكبر في المنطقة، وله أهمية كبيرة في الاقتصاد العالمي.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                  </div>
+              </div>
+              <!-- end statistics-features -->
+              <p>قم بتحويل أعمالك إلى آفاق اقتصادية جديدة : كن شريكاً مع رواد التصدير في دولة قطر!</p>
+          </div>
        </section>
        <!-- end content-qatar -->
+       <!-- start Labor sector -->
+       <section class="labor-sector">
+        <div class="main-container">
+          <h2 class="sub-title"> القطاعات </h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="labor-sector-item">
+                <div class="labor-sector-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="labor-sector-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="labor-sector-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="labor-sector-item">
+                <div class="labor-sector-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="labor-sector-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="labor-sector-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="labor-sector-item">
+                <div class="labor-sector-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="labor-sector-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="labor-sector-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="labor-sector-item">
+                <div class="labor-sector-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="labor-sector-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="labor-sector-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="labor-sector-item">
+                <div class="labor-sector-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="labor-sector-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="labor-sector-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="labor-sector-item">
+                <div class="labor-sector-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="labor-sector-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="labor-sector-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="labor-sector-item">
+                <div class="labor-sector-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="labor-sector-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="labor-sector-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="labor-sector-item">
+                <div class="labor-sector-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="labor-sector-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="labor-sector-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            
+          </div>
+        </div>
+       </section>
+       <!-- end Labor sector -->
+      <!-- start sectors -->
+      <section class="sectors">
+        <div class="main-container">
+          <h2 class="sub-title"> قطاع العمل</h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="sectors-item">
+                <div class="sectors-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="sectors-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                  <div class="sectors-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="sectors-item">
+                <div class="sectors-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="sectors-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sectors-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="sectors-item">
+                <div class="sectors-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="sectors-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sectors-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="sectors-item">
+                <div class="sectors-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="sectors-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sectors-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="sectors-item">
+                <div class="sectors-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="sectors-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sectors-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="sectors-item">
+                <div class="sectors-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="sectors-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sectors-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="sectors-item">
+                <div class="sectors-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="sectors-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sectors-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-3 col-md-6">
+              <div class="sectors-item">
+                <div class="sectors-item-img">
+                  <img src="images/labor-sector.png" alt="labor-sector">
+                  <div class="sectors-item-title">
+                    <p>الشركات</p>
+                    <ul>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                      <li>دسيرف</li>
+                      <li>الوحدة</li>
+                      <li>الغاز</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sectors-item-text">
+                  <h3>التصدير</h3>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            
+          </div>
+        </div>
+       </section>
+       <!-- end hero content -->
+       <!-- start Companies -->
+       <section class="companies">
+        <div class="main-container">
+          <h2 class="sub-title"> الشركات </h2>
+          <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+              <div class="company-item">
+                <div class="company-item-img">
+                  <img src="images/company-logo.png" alt="company-item">
+                </div>
+                <div class="company-item-text">
+                  <p>INTEGRATED
+                    EXTRUSTION</p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+              <div class="company-item">
+                <div class="company-item-img">
+                  <img src="images/company-logo.png" alt="company-item">
+                </div>
+                <div class="company-item-text">
+                  <p>INTEGRATED
+                    EXTRUSTION</p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+              <div class="company-item">
+                <div class="company-item-img">
+                  <img src="images/company-logo.png" alt="company-item">
+                </div>
+                <div class="company-item-text">
+                  <p>INTEGRATED
+                    EXTRUSTION</p>
+                </div>
+              </div>
+            </div>
+              <!--  --><div class="col-lg-2 col-md-4 col-sm-6 col-12">
+              <div class="company-item">
+                <div class="company-item-img">
+                  <img src="images/company-logo.png" alt="company-item">
+                </div>
+                <div class="company-item-text">
+                  <p>INTEGRATED
+                    EXTRUSTION</p>
+                </div>
+              </div>
+            </div>
+            <!--  --><div class="col-lg-2 col-md-4 col-sm-6 col-12">
+              <div class="company-item">
+                <div class="company-item-img">
+                  <img src="images/company-logo.png" alt="company-item">
+                </div>
+                <div class="company-item-text">
+                  <p>INTEGRATED
+                    EXTRUSTION</p>
+                </div>
+              </div>
+            </div>
+            <!--  --><div class="col-lg-2 col-md-4 col-sm-6 col-6">
+              <div class="company-item">
+                <div class="company-item-img">
+                  <img src="images/company-logo.png" alt="company-item">
+                </div>
+                <div class="company-item-text">
+                  <p>INTEGRATED
+                    EXTRUSTION</p>
+                </div>
+              </div>
+            </div>
+            <!--  --><div class="col-lg-2 col-md-4 col-sm-6 col-6">
+              <div class="company-item">
+                <div class="company-item-img">
+                  <img src="images/company-logo.png" alt="company-item">
+                </div>
+                <div class="company-item-text">
+                  <p>INTEGRATED
+                    EXTRUSTION</p>
+                </div>
+              </div>
+            </div>
+            <!--  --><div class="col-lg-2 col-md-4 col-sm-6 col-6">
+              <div class="company-item">
+                <div class="company-item-img">
+                  <img src="images/company-logo.png" alt="company-item">
+                </div>
+                <div class="company-item-text">
+                  <p>INTEGRATED
+                    EXTRUSTION</p>
+                </div>
+              </div>
+            </div>
+            <!--  --><div class="col-lg-2 col-md-4 col-sm-6 col-6">
+              <div class="company-item">
+                <div class="company-item-img">
+                  <img src="images/company-logo.png" alt="company-item">
+                </div>
+                <div class="company-item-text">
+                  <p>INTEGRATED
+                    EXTRUSTION</p>
+                </div>
+              </div>
+            </div>
+            <!--  --><div class="col-lg-2 col-md-4 col-sm-6 col-12">
+              <div class="company-item">
+                <div class="company-item-img">
+                  <img src="images/company-logo.png" alt="company-item">
+                </div>
+                <div class="company-item-text">
+                  <p>INTEGRATED
+                    EXTRUSTION</p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+       </section>
+       <!-- end Companies -->
+       <!-- start contact -->
+       <section class="contact">
+        <div class="main-container">
+          <h2 class="sub-title" > للتواصل معنا </h2>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="contact-item">
+                <div class="contact-img">
+                  <img src="images/invitation.png" alt="contact-item">
+                </div>
+                <!-- <div class="contact-item-img">
+                  <img src="images/conavt-logo.png" alt="contact-item">
+                  <img src="images/conact-logo2.png" alt="contact-item">
+                </div>
+                <div class="contact-item-text">
+                  <p>البعثة التجارية القطرية الي سلطنة
+                    عمان 2025</p>
+                  <span>المصدرون القطريون والمشترون العمانيون</span>
+                </div>
+                <div class="contact-invitation">
+                  <div class="contact-invitation-item">
+                    <span>01</span>
+                    <p>
+                      الاجتماع عبر منصة الانترنت - مفتوح الان
+                    </p>
+
+                  </div>
+                  <div class="contact-invitation-item">
+                    <span>02</span>
+                    <p>
+                      دعوة لحضور البعثة التجارية خلال :التاريخ 28 - 29 أكتوبر 2025
+                    </p>
+                  </div>
+                </div>
+                <div class="invitation-card">
+                  <p>يسر بنك قطر للتنمية دعوة المشترين  العمانيين الكران للمشاركة في فعاليات الاجتماعات الثنائية مع نخبة من الشركات القطرية </p>
+                  <span>سيتم تنسيق اجتماعات ثنائية عبر منصة الانترنت قبيل البعثة التجارية القطرية الي سلطنة عمان المزعم عقدها خلال الفترة 28-29 أكتوبر 2025 وذلك لبحث سبل التعاون التجارية  بين الشركتين النظيرتين مما سيساهم بنجاح اجتماعاتكم خلال البعثة</span>
+                </div>
+                <div class="invite-details">
+                  <div class="invite-details-item">
+                    <p>الجهة المنظمة</p>
+                    <span>بنك قطر للتنمية , تصدير</span>
+                  </div>
+                  <div class="invite-details-item">
+                    <p>الوقت والتاريخ</p>
+                    <span>الاجتماع عبر منصة الانترنت مفتوح الان - ستقام البعثة التجارية خلال الفترة  28-29 أكتوبر 2025 </span>
+                  </div>
+                  <div class="invite-details-item">
+                    <p>توفير الدعم</p>
+                    <span>توفير الترجمة خلال الاجتماعات</span>
+                  </div>
+                  <div class="invite-details-item">
+                    <p>فئة المنتج</p>
+                    <span>قطاعات مثل الزيوت البترولية المكررة والمنتجات البلاستيكية المعاد تدويرها وغيرها</span>
+                  </div>
+                  <div class="invite-details-item">
+                    <p>الاجتماع عبر الانترنت</p>
+                    <span>اجتماع مباشر لمدة 30 دقيقة مع مصدر قطري</span>
+                  </div>
+                  <div class="invite-details-item">
+                    <p>كيفية التقديم</p>
+                    <span>اضغط علي رابط سجل الان للمشاركة</span>
+                  </div>
+                </div> -->
+                
+              </div>
+              
+
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="contact-cards">
+                <div class="contact-container-card">
+                <p>مبارك الهاجري</p>
+                <div class="contact-card">
+                  <div class="contact-card-item">
+                    <img src="images/id.svg" alt="contact-icon">
+                    <p>مسؤول أول للتوفيق الثنائي للمصدرين</p>
+                  </div>
+                  <div class="contact-card-item">
+                    <img src="images/call.svg" alt="contact-icon">
+                    <p>+ 974 44300371</p>
+                  </div>
+                  <div class="contact-card-item">
+                    <img src="images/sms.svg" alt="contact-icon">
+                    <p>mhajri@qdb.qa</p>
+                  </div>
+                  
+
+                </div>
+              </div>
+              <!--  -->
+              <div class="contact-container-card">
+                <p>مبارك الهاجري</p>
+                <div class="contact-card">
+                  <div class="contact-card-item">
+                    <img src="images/id.svg" alt="contact-icon">
+                    <p>مسؤول أول للتوفيق الثنائي للمصدرين</p>
+                  </div>
+                  <div class="contact-card-item">
+                    <img src="images/call.svg" alt="contact-icon">
+                    <p>+ 974 44300371</p>
+                  </div>
+                  <div class="contact-card-item">
+                    <img src="images/sms.svg" alt="contact-icon">
+                    <p>mhajri@qdb.qa</p>
+                  </div>
+                  
+
+                </div>
+              </div>
+              <!--  -->
+              <div class="contact-container-card">
+                <div class="contact-card">
+                  
+                  <div class="contact-card-item">
+                    <img src="images/address.svg" alt="contact-icon">
+                    <p>Al Khuwair, Bausher, Muscat, Oman</p>
+                  </div>
+                  
+                  
+
+                </div>
+              </div>
+              <a href="" class="contact-btn ctm-btn1">سجل الان للمشاركة</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+       <!-- end contact -->
+       <!-- start footer -->
+       <footer class="footer" style="background-image: url(images/footer-bg.png);">
+        <div class="main-container">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="footer-logo">
+          </div>
+          <div class="footer-content">
+            <div class="footer-content-item">
+              <ul>
+                <li><a href="">عن البعثة</a></li>
+                <li><a href="">القطاعات</a></li>
+                <li><a href="">الشركات القطرية</a></li>
+                <li><a href=""> تواصل معنا</a></li>
+              </ul>
+            </div>
+            <div class="footer-content-icons">
+              <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              
+            </div>
+            <p> Qatar-Oman Trade Mission. All rights reserved 2025 ©</p>
+            
+          </div>
+        </div>
+       </footer>
+       <!-- end footer -->
+
     </main>
+    <!-- rsponsive menu -->
+    <div class="overlay"></div>
+    <section class="responsive-menu" >
+            
+        <a href="">
+            <img class="logo" src="images/logo.png" alt="">
+        </a>
+        <!-- links -->
+        
+        <div class="menu nav-list ">
+              <ul>
+                <li><a  class="active" href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">عن البعثة</a></li>
+                <li><a href="services.html">القطاعات</a></li>
+                <li><a href="contact.html"> الشركات القطرية</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+              </ul>
+            </div>
+
+            <div class="menu-icon">
+                <a href="#" class="ctm-btn1 meetings">سجل للاجتماعات</a>
+                <a href="#" class="ctm-btn2 lang">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                        <path d="M16.9878 8.96094H7.00781" stroke="#8D1739" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 7.28125V8.96124" stroke="#8D1739" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.5 8.94141C14.5 13.2414 11.14 16.7214 7 16.7214" stroke="#8D1739" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.9992 16.72C15.1992 16.72 13.5992 15.76 12.4492 14.25" stroke="#8D1739" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#8D1739" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                    <p >العربية</p>
+                </a>
+            </div>
+
+
+    </section>
+
+
+    <!-- responsive menu -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
