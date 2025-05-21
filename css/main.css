@@ -59,6 +59,7 @@
   background-color: var(--color-Primary1);
   z-index: -1;
   border-radius: 10px;
+  animation: img-animation 4s ease-in-out infinite;
   
 }
 .about-section .about-img::after{
@@ -71,6 +72,32 @@
   background-color: var(--color-Primary1);
   z-index: -1;
   border-radius: 10px;
+  animation: img-animation-reverse 4s ease-in-out infinite;
+}
+
+@keyframes img-animation{
+  0%{
+    height: 0;
+  }
+  50%{
+    height: 50%;
+  }
+  100%{
+    height: 0;
+  }
+  
+}
+@keyframes img-animation-reverse{
+  0%{
+    width: 0;
+  }
+  50%{
+    width: 80%;
+  }
+  100%{
+    width: 0;
+  }
+  
 }
 .about-section .about-img img{
   box-shadow: 0 0 10px 10px rgba(141, 23, 57, 0.25);
@@ -196,7 +223,8 @@
 .event-section .count-container .count-body span{
   font-size: 150px;
   color: var(--color-Primary1);
-  
+  font-family: "poppins-bold";
+  font-weight: bold;
 
 }
 
@@ -269,6 +297,7 @@
   font-family: "font_bold";
 }
 
+
 /* statistics numbers */
 .content-qatar .statistics-numbers{
   display: flex;
@@ -296,10 +325,11 @@
   justify-content: center;
   gap: 10px;
 } 
-.content-qatar .statistics-numbers .statistics-numbers-item .statistics-numbers-item-counter span{
+.content-qatar .statistics-numbers .statistics-numbers-item .statistics-numbers-item-counter .progress-text{
   font-size: 60px;
   color: var(--color-white);
-  font-family: "font_bold";
+  font-family: "poppins-bold";
+  font-weight: bold;
 } 
 .content-qatar .statistics-numbers .statistics-numbers-item .statistics-numbers-item-counter p{
   font-size: 14px;

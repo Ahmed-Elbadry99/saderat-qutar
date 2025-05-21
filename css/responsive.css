@@ -125,6 +125,10 @@
   font-size: 26px;
  }
 
+ .hero-content-text h2, .hero-content-text p{
+  font-size: 35px;
+ }
+
  .about-section .about-text p,
  .about-bank .about-bank-text p{
   font-size: 16px;
@@ -144,9 +148,33 @@
   .labor-sector .labor-sector-item-text h3, .sectors .sectors-item-text h3{
     font-size: 20px;
   }
+  .contact-card-item p{
+    font-size: 18px;
+  }
+  .footer{
+    background-size: cover;
+    overflow: unset;
+  }
+  .footer .footer-content-item ul{
+    gap:10px
+  }
+  .footer .footer-content-item ul li a{
+    font-size: 16px;
+  }
+  .footer::before,
+  .footer::after{
+    top: -30px;
+  }
 }
 
 @media (max-width: 576px) {
+
+  .hero-content-text h2, .hero-content-text p{
+    font-size: 30px;
+  }
+  .hero-content-text .hero-content-text-desc{
+    font-size: 18px;
+  }
   .event-section .count-container .count-body p{
     font-size: 16px;
   }
@@ -158,6 +186,10 @@
   }
   .labor-sector .labor-sector-item-text h3, .sectors .sectors-item-text h3{
     font-size: 18px;
+  }
+  .footer .footer-content-item ul{
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -175,6 +207,26 @@
     font-size: 16px;
   }
   
+  .contact-card-item p{
+    font-size: 16px;
+  }
+ 
+  footer p{
+    font-size: 14px;
+  }
+
+  .hero-content-text h2, .hero-content-text p{
+    font-size: 25px;
+  }
+
+  .hero-content-text .hero-content-text-desc{
+    font-size: 16px;
+  }
+
+  .ctm-btn1{
+    font-size: 14px;
+  }
+
 
 }
 
@@ -182,5 +234,10 @@
   .event-section .count-container .count-body p{
     font-size: 10px;
   }
-  
+  footer p{
+    font-size: 12px;
+  }
+  .contact-card-item p{
+    font-size: 14px;
+  }
 }

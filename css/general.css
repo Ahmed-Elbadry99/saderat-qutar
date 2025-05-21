@@ -17,6 +17,13 @@
   font-family: "semiBold";
   src: url("../fonts/Cairo-SemiBold.ttf");
 }
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+
 :root {
   --color-white: #fff;
   --color-black: #0A0A0A;

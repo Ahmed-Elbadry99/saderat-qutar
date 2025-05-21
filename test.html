@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>15-Day Countdown</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      height: 100vh;
+      background: #f9f9f9;
+      margin: 0;
+    }
+    #countdown {
+      display: flex;
+      gap: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    #countdown div {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    #countdown span {
+      display: block;
+      font-size: 3rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="countdown">
+    <div><span id="days">0</span>Days</div>
+    <div><span id="hours">0</span>Hours</div>
+    <div><span id="minutes">0</span>Minutes</div>
+    <div><span id="sec">0</span>seconed</div>
+  </div>
+
+  <script>
+    const targetDate = new Date();
+   
+    targetDate.setMinutes(targetDate.getMinutes() + 1); // Add 20 minutes
+    targetDate.setHours(targetDate.getHours() + 0);      // Add 5 hours
+    targetDate.setDate(targetDate.getDate() + 0);       // Add 10 days
+    function updateCountdown() {
+      
+        let now = new Date().getTime()
+        
+        console.log(targetDate);
+        
+        let distance = targetDate - now;
+
+        if(distance <=0){
+            clearInterval(timer);
+            document.getElementById("countdown").innerHTML = "Countdown Finished!";
+        }
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconed = Math.floor((distance / 1000) % 60);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
+      document.getElementById("sec").textContent = seconed;
+    }
+    updateCountdown()
+    let timer = setInterval(
+        updateCountdown, 1000);
+
+
+
+        
+
+/* for only one counter without bar
+        const animateProgress = (wrapper) => {
+          let targetNumber = parseInt(wrapper.getAttribute("data-percent"));
+          const text = wrapper.querySelector(".progressText");
+          let current = 0;
+        
+          const interval = setInterval(() => {
+            if (current > targetNumber) {
+              clearInterval(interval);
+              return;
+            }
+        
+            text.textContent = current;
+            current++;
+          }, 5);
+        };
+        
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                document.querySelectorAll(".statistics-numbers-item-counter").forEach((wrapper) => {
+                  const text = wrapper.querySelector(".progressText");
+                  text.textContent = "0";
+                  animateProgress(wrapper);
+                });
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+        
+        const progressSection = document.querySelector(".statistics-numbers");
+        if (progressSection) {
+          observer.observe(progressSection);
+        }
+*/
+
+  </script>
+
+</body>
+</html>
