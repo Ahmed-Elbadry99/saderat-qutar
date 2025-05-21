@@ -38,6 +38,9 @@ document.querySelectorAll('.option').forEach(option => {
 
 // Set the target date for the event (Year, Month(0-11), Day, Hour, Minute)
 const targetDate = new Date(2025, 6, 15, 9, 0); // January 15, 2024 at 9:00 AM
+let timers= document.getElementById("days");
+
+
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -60,9 +63,13 @@ function updateCountdown() {
     document.getElementById("sec").textContent = seconds;
 }
 
-updateCountdown();
-let timer = setInterval(updateCountdown, 1000);
 
+if(timers){
+     
+     updateCountdown();
+}
+
+let timer = setInterval(updateCountdown, 1000);
 
 
 
@@ -130,3 +137,17 @@ const progressSection = document.querySelector(".statistics-numbers");
 if (progressSection) {
   observer.observe(progressSection);
 }
+
+
+// register form
+const input = document.querySelector("#phone");
+window.intlTelInput(input, {
+  initialCountry: "auto",
+  geoIpLookup: callback => {
+    fetch("https://ipinfo.io/json?token=your_token") // You can remove this line if you don't want auto country detection
+      .then(resp => resp.json())
+      .then(resp => callback(resp.country))
+      .catch(() => callback("us"));
+  },
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+});
