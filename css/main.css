@@ -829,6 +829,11 @@ footer p{
 .register-form{
   padding: 70px 0;
 }
+.register-form .main-container{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .register-form form{
   display: flex;
   flex-direction: column;
@@ -852,7 +857,16 @@ footer p{
   color: black;
   
 }
-
+.register-form-header{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.register-form-desc{
+  font-size: 16px;
+  color: var(--color-gray);
+  font-family: "font_main";
+}
 
 .form-check-item{
   display: flex;

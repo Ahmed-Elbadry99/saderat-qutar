@@ -206,6 +206,8 @@ header.pages-header::after{
   transition: 0.4s;
   cursor: pointer;
   display: none;
+  background-color: var(--color-Primary1);
+
 }
 
 .show-menu:hover {
@@ -213,6 +215,10 @@ header.pages-header::after{
   border: 1px solid var(--primary1);
 }
 
+.show-menu i{
+ 
+
+}
 
 
 
