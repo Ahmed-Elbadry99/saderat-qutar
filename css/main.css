@@ -509,7 +509,8 @@ justify-content: center;
   color: var(--color-Primary1);
   text-align: center;
 } 
-.companies .company-item-text p{
+.companies .company-item-text p,
+.companies .company-item-text a{
   font-size: 16px;
   color: var(--color-gray);
   text-align: center;
