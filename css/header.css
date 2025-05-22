@@ -1,6 +1,10 @@
 /* hero */
 header{
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 .pages-header{
   height: fit-content;
